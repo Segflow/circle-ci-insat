@@ -8,6 +8,8 @@ jobs:
       - checkout
       - run: ls -la
 
+      - run: mkdir /tmp/tests
+
       - run:
           name: Run tests
           command: gotestsum --junitfile /tmp/tests/unit-tests.xml
