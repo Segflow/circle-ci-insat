@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="1" failures="0" time="0.000000" name="_/Users/segflow/Desktop/insat_circleCI">
+		<properties>
+			<property name="go.version" value="go1.13.4 darwin/amd64"></property>
+		</properties>
+		<testcase classname="_/Users/segflow/Desktop/insat_circleCI" name="TestFact" time="0.000000"></testcase>
+	</testsuite>
+</testsuites>
