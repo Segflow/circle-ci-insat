@@ -20,9 +20,9 @@ jobs:
           command: |
             go test -benchmem -run=^$ -bench . | tee /tmp/benchmark-results/bechmark.txt
 
-      - store_artifacts:
+      - store_test_results:
           path: /tmp/tests/
-          destination: tests
+          
 
       - store_artifacts:
           path: /tmp/benchmark-results
