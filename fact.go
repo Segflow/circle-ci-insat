@@ -1,7 +1,7 @@
 package main
 
 func Fact(n uint) uint {
-	return factRecusive(n)
+	return factIterative(n)
 }
 
 func factIterative(n uint) uint {
