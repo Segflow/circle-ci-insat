@@ -10,4 +10,17 @@ jobs:
 
       - run:
           name: Run tests
-          command: gotestsum --junitfile /tmp/unit-tests.xml
+          command: gotestsum --junitfile /tmp/tests/unit-tests.xml
+
+      - run:
+          name: Run benchmarks
+          command: |
+            go test -benchmem -run=^$ -bench . | tee /tmp/benchmark-results/bechmark.txt
+
+      - store_artifacts:
+          path: /tmp/tests/
+          destination: tests
+
+      - store_artifacts:
+          path: /tmp/benchmark-results
+          destination: benchmarks
