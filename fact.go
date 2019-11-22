@@ -6,6 +6,7 @@ func Fact(n uint) uint {
 
 func factIterative(n uint) uint {
 	var r uint = 1
+
 	for i := uint(1); i <= n; i++ {
 		r = r * i
 	}
