@@ -9,6 +9,7 @@ jobs:
       - run: ls -la
 
       - run: mkdir /tmp/tests
+      - run: mkdir /tmp/benchmark-results
 
       - run:
           name: Run tests
