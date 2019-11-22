@@ -7,3 +7,7 @@ jobs:
     steps:
       - checkout
       - run: ls -la
+
+      - run:
+          name: Run tests
+          command: gotestsum --junitfile /tmp/unit-tests.xml
