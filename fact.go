@@ -1,7 +1,16 @@
 package main
 
 func Fact(n uint) uint {
-	return factRecusive(n)
+	return factIterative(n)
+}
+
+func factIterative(n uint) uint {
+	var r uint = 1
+	for i := uint(1); i <= n; i++ {
+		r = r * i
+	}
+
+	return r
 }
 
 func factRecusive(n uint) uint {
